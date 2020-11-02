@@ -1,0 +1,29 @@
+.Parallax{
+    background-color: violet;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box1{
+height: 5rem;
+width: 10rem;
+background-color: tomato;
+margin: auto;
+}
+.box2{
+    height: 5rem;
+width: 10rem;
+background-color: yellowgreen;
+margin: auto;
+
+}
+
+.box3{
+    height: 5rem;
+width: 10rem;
+background-color: yellowgreen;
+margin: auto;
+
+}

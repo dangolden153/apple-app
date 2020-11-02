@@ -1,0 +1,7 @@
+.box{
+    height: 7rem;
+    width: 20rem;
+    margin: auto auto;
+    background-color:pink ;
+    transform: translateY(100%);
+}

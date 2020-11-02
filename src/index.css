@@ -5,9 +5,41 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(245, 245, 247);
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+*::before, ::after{
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+html{
+  margin: 0; 
+  width: 100%;
+  box-sizing: border-box;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.color{
+  background-color: rgb(245, 245, 247);
+  background-color: rgba(255, 255, 255, 0.72);
+  color: #0e90db;
+  color: rgb(29,29,31);
+  color: #0b9e93;
+  color: #ffb300;
+  color: #009146;
+  color: #e35416;
+  color: #622aff;
+}
+.grey-50-100-300{
+  color: rgb(248,249,250);
+  color: rgb(241,243,254);
+  color:  rgb(218, 220,224);
+
 }

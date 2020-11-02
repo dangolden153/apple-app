@@ -1,0 +1,43 @@
+.list-con{
+    background: rgba(0,0,0,0.92);
+    height: 45px;
+    position: sticky;
+    top: 1px;
+    display: flex;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.list-con.active{
+     opacity: 0;
+}
+.items{
+    padding: 0px 27px;
+}
+
+.padding-right{
+
+}
+
+.padding-left{
+
+}
+
+.img{
+    height: 18px;
+    width: 19px;
+    background-position: center;
+    background-size: cover;
+    object-fit: center;
+}
+.link{
+    color: rgb(245, 245, 247);
+    text-decoration: none;
+}
