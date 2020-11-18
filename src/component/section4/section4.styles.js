@@ -9,6 +9,10 @@ position: relative;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+
+    @media screen and (max-width: 800px){
+        flex-direction: column;
+    }
 `
 export const Left_section = styled.div `
 width: 25%;
@@ -16,7 +20,24 @@ margin:10px ;
 margin-left: 31px;
 border-radius: 36px;
 background: #fff;
-padding: 15px 15px 44px 15px;
+padding: 15px 15px 222px 15px;
+overflow: hidden;
+
+
+
+
+@media only screen and (max-width: 385px){
+    border-radius: unset;
+}
+
+@media only  screen and (max-width: 800px){
+    max-width: 372px;
+    width: 100%;
+    margin-left: unset;
+    margin: 0 auto 30px;
+    padding: 20px 0;
+    
+}
 `
 
 
@@ -26,6 +47,11 @@ flex-direction: column;
 justify-content: center;
 align-items: flex-start;
 
+@media screen and (max-width: 800px){
+    width: 83%;
+    margin: 0 auto;
+}
+
 `
 
 export const Text = styled.div `
@@ -34,6 +60,11 @@ flex-direction: column;
 justify-content: center;
 align-items: flex-start;
 width: 59.6%;%;
+
+@media only screen and (max-width: 800px) {
+    width: 83%;
+    margin: 0 auto;
+}
 `
 export const Header = styled.h3 `
 font-size: 20px;
@@ -53,6 +84,11 @@ align-items: flex-start;
 text-align: left;
 width: 89%;
 margin: 0;
+
+@media screen and (max-width: 800px){
+    width: unset;
+    
+}
 `
 
 export const P = styled.p `
@@ -74,6 +110,11 @@ background-size: cover;
 background-position: center;
 margin: 0 auto;
 margin-top: 62px;
+
+@media only screen and (max-width: 800px){
+height: 22rem;
+width: 18rem;
+}
 `
 export const Right_section = styled.div `
 flex: 1;
@@ -81,18 +122,43 @@ margin: 10px;
 margin-right: 33px;
 border-radius: 36px;
 background: #fff;
+overflow: hidden;
+
+@media only  screen and (max-width: 385px){
+    border-radius: unset;
+}
+
+@media only  screen and (max-width: 800px){
+    max-width: 372px;
+    width: 100%;
+    margin-left: unset;
+    margin: 0 auto;
+}
 `
 export const Text_img = styled.div `
 padding-left: 20px;
 padding-top: 15px;
 position: relative;
+
+@media only screen and (max-width: 800px) {
+    padding-left: unset;
+
+}
 `
 export const Img = styled.div `
-transform: translateX(53px);
-    width: 820px;
-    height: 574px;
-    background-size: 820px 574px;
+transform: translateX(98px);
+    width: 1045px;
+    height: 731px;
+    background-size: cover;
 background-position: center;
 margin-top: 64px;
 border-radius: 0 0 36px;
+
+@media only  screen and (max-width: 800px){
+    transform: translateX(52px);
+    width: 300px;
+    height: 230px;
+    background-size: cover;
+}
+
 `

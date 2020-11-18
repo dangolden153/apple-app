@@ -10,9 +10,7 @@ const Section_8 = ()=>{
             <Text_img>
                 <Section1_text>
                     <Header_text>
-                    <Span_text1>Messages on Mac.</Span_text1>
-                   <Span_text1>The ultimate</Span_text1>  
-                   <Span_text1>conversation stater.</Span_text1>  
+                    Messages on Mac. <br/> The ultimate conversation stater. 
                     </Header_text>
 
                      <Paragragh_text>

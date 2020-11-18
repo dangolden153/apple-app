@@ -8,9 +8,11 @@ const Section_3 = ()=>{
     <Text_img>
         <Text>
             <Header>Customizable start page</Header>
-            <P>Set a custom background image to start every browsing session with the view that works</P>
-            <P>for you. And decide what appears on your start page - such as your reading List, Favourites,</P>
-            <P>icloud Tabs, Siri Suggestions, and even a Privacy Report.</P>
+            
+            <P>Set a custom background image to start every browsing session with the view that works
+            for you. And decide what appears on your start page - such as your reading List, Favourites,
+            icloud Tabs, Siri Suggestions, and even a Privacy Report.</P>
+            
 
         </Text>
         <Img style={{

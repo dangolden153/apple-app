@@ -1,0 +1,66 @@
+.text{
+    padding-top: 20px;
+    width: 100%;
+}
+
+.P{
+    font-size: 13px;
+    line-height: 1.4;
+    color: rgb(154, 160, 166);
+    padding: 8px 0;
+}
+
+
+
+
+
+.Header{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: rgb(29,29,31);
+}
+
+.Svg{
+    display: none;
+}
+
+
+
+
+@media only  screen and (max-width: 800px){
+    .text,.text1{
+        max-height: 30px;
+        overflow-y: hidden;
+        width: 100%;
+        padding-top: unset
+    }
+    .textActive,.textActive1{
+        max-width: unset;
+        overflow-y: unset;
+        transition:all .2s ;
+        width: 100%;
+    }
+
+
+    .Svg{
+    height: 9px;
+    width: 10px;
+    display: block;
+    background-size: contain;
+    transform: rotate(45deg);
+    transition: all .5s;
+    padding-top: 5px;
+    }
+
+    .SvgActive{
+    height: 10px;
+    width: 10px;
+    display: block;
+    background-size: contain;
+    transition: all .5s;
+    padding-top: 5px;
+
+    }
+
+}

@@ -2,6 +2,10 @@
     height:275vh ;
     background-image: radial-gradient(circle, #1f1663, #050939);
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .header-box{
@@ -10,7 +14,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 10%;
+    bottom: 20%;
 }
 
 .header-img{
@@ -63,4 +67,33 @@
     padding: 7px 22px;
     border-radius: 20px;
     margin-top: 15px;
+}
+
+
+@media only screen and (max-width: 800px){
+    
+    .header-con{
+        height: 168vh;    }
+    
+    .header-img{
+        height: 15rem;
+        width: 21rem;
+        top: 10%;
+    }
+    .header-box{
+        bottom: 5%;
+        padding: 20px 30px;
+    }
+
+    .paragragh-text{
+        width: 98%;
+    }
+    .span1{
+        font-size:24px;
+    }
+
+    .span2, .span3{
+        font-size:35px;
+
+    }
 }

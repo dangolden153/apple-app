@@ -151,13 +151,14 @@ const handleChangefixed =()=>{
             <div className="text-img">
                 <div className="section1-text">
                     <h2 className="section1-header-text">
-                    <span className="span-header-text1">Bold new experience.</span>
-                   <span className="span-header-text2">Same Mac magic</span>  
+                    Bold new experience. Same Mac magic
+                      
                     </h2>
                      <p className="section1-paragragh-text">
-                         <span className="section-text-1">Unparalleled power. Legendary ease of use. Limitless creavity</span>
-                         <span className="section-text-2">macOS Big Sur brings a redefine new design that even give you more</span>
-                         <span className="section-text-2"> of the things you love above Mac</span>
+                     Unparalleled power. Legendary ease of use. Limitless creavity
+                     macOS Big Sur brings a redefine new design that even give you more
+                     of the things you love above Mac
+                         
 
                      </p>
 

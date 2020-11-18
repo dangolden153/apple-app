@@ -1,8 +1,10 @@
 
 
 .Down_nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 74px;
-    padding: 0px 37px;
     background-color: rgba(29, 29, 31, 0.72);;
     position: sticky;
     top: 1px;
@@ -24,21 +26,34 @@
 
 .nav-con{
     position: relative;
-    top: -14px;
+    width: 80%;
     z-index: 999;
-    text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 848px;
     margin: 0 auto;
-    padding-right: 43px;
-    padding-left: 43px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
 
+.nav-con1{
+    height: 64px;
+    position: absolute;
+    top: 2px;
+    z-index: 999;
+    text-align: center;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 848px;
+    margin: 0 auto;
+    width: 80%;
+    align-items: center;
+   
+    font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
 .left-box{
         display: flex;
         flex-direction: column;
@@ -83,6 +98,11 @@
 
 }
 
+.seacrh{ 
+    height: 15px;
+    width: 15px;
+    transform: rotate(90deg);
+}
 
 .overview-text{
     font-size: 12px;
@@ -93,6 +113,18 @@
     opacity: 0.56;
 }
 
+.preview-textMedia{
+font-size: 25px;
+font-weight: 500;
+color: rgb(218, 220,224);
+}
+.activetextMedia{
+    font-size: 25px;
+font-weight: 500;
+    color:black;
+    ;
+
+}
 
 .features{
     color: rgb(245, 245, 247);
@@ -102,4 +134,26 @@
 
 .features.active{
     color: black;
+}
+
+
+@media only screen and (max-width: 800px){
+
+   
+    .nav-con{
+        display: none;
+    }
+
+    .nav-con1{
+        display: flex;
+
+    }
+   .left-box{
+       transform: translateY(0px);
+   }
+   
+   .right-box{
+    transform: translateY(0px);
+    margin-right: 10px;
+   }
 }

@@ -15,36 +15,49 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 padding: 15px 40px;
+
+@media only screen and (max-width: 800px){
+    padding: unset;
+}
 `
 export const Section1_text = styled.div `
-display: flex;
-flex-direction: column;
-align-items: flex-start;
 width: 76%;
 margin: 30px auto;
+text-align: left;
+
+@media only screen and (max-width: 800px){
+    text-align: left;
+    max-width: 372px;
+    width: 89%;
+    
+}
 `
 export const Header_text = styled.h2 `
 display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    
-`
-export const Span_text1 = styled.span `
+flex-direction: column;
+align-items: flex-start;
 color: #0e90db;
 font-size: 42px;
-    font-weight: 800;
+font-weight: 800;
+
+@media screen and (max-width: 800px){
+    font-size: 36px;
+}
 `
+
 export const Paragragh_text = styled.p `
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    
-`
-export const P_span_text1 = styled.span `
     font-size: 20px;
     font-weight: 500;
-    line-height: 1.4;;
-`
+    line-height: 1.4;
+
+    @media screen and (max-width: 800px){
+        font-size: 19px;
+    }
+    `
+
 
 
 
@@ -53,10 +66,16 @@ export const Img_con = styled.div `
 height: 50rem;
 width: 62rem;
 
+
 img{
     height:100% ;
     width: 100% ;
     object-fit: cover; 
+}
+
+@media screen and (max-width: 800px){
+    height: 233px;
+    width: 289px;
 }
 `
 

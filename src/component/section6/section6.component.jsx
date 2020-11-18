@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../pic/apple3.jpg'
+import img from '../pic/ap6.jpg'
 import {Container,Text_img,Text,Header,P,Img} from './section6.styles'
 
 const Section_6 = ()=>{

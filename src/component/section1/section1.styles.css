@@ -36,11 +36,10 @@
 }
 
 .section1-paragragh-text{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     font-size: 25px;
     font-weight: 500;
+    width: 80%;
+    text-align: left;
 }
 .section1-link{
     text-decoration: none;
@@ -229,4 +228,37 @@
     font-size: 19px;
     font-weight: 600;
     color: #622aff;
+}
+
+@media screen and (max-width: 800px){
+
+    .section1{
+        display: none;
+    }
+    .section1-text{
+        padding-left: unset;
+        width: 95%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .section1-paragragh-text{
+        width: 95%;
+
+    }
+
+    .text-img{
+        padding: unset;
+    }
+
+    .img-wrapper{
+        width: 321px;
+        height: 189px;
+    }
+
+    .pics1, .pics2{
+        width: 271px;
+        height: 172px;
+        top: -4px;
+    }
 }

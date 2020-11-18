@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-
+import navIcon from '../pic/right-direction.svg'
 import './down-nav.styles.css'
 
 const Down_nav =()=>{
@@ -19,10 +19,7 @@ const Down_nav =()=>{
     window.addEventListener("scroll", handleChange)
 
     return (
-        <div className={state ? "Down_nav isActive"  : "Down_nav"} 
-                         
-        
-        >
+        <div className={state ? "Down_nav isActive"  : "Down_nav"}  >
 
 <div className="nav-con">
             <div className="left-box">
@@ -33,7 +30,17 @@ const Down_nav =()=>{
                 <p className={state ? "overview-text active" : " overview-text"}>Overview</p>
                 <p className={state ? "features active" : " features"}>All New Features</p>
             </div>
+    </div>
+
+    <div className="nav-con1">
+            <div className="left-box">
+                <p className={state ? " activetextMedia" : " preview-textMedia"}> macOS Big Sur</p>
+                 
             </div>
+            <div className="right-box">
+                <img src={navIcon} alt="nav icon" className="seacrh"/>
+            </div>
+    </div>
         </div>
     )
 }

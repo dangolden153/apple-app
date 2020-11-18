@@ -10,6 +10,10 @@ position: relative;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+
+    @media only  screen and (max-width: 800px){
+       flex-direction: column;
+        }
 `
 export const Left_section = styled.div `
 width: 25%;
@@ -20,6 +24,17 @@ background: #fff;
 padding: 15px 15px 223px 15px;
 overflow: hidden;
 
+@media only  screen and (max-width: 385px){
+    border-radius: unset;
+}
+
+@media only  screen and (max-width: 800px){
+    max-width: 372px;
+    width: 100%;
+    margin: 0 auto;
+    padding:unset;
+    margin-bottom: 20px;
+    }
 `
 
 
@@ -28,6 +43,14 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: flex-start;
+
+
+@media only  screen and (max-width: 800px){
+    max-width: 372px;
+    width: 83%;
+    margin: 0 auto;
+    padding:unset;
+    }
 
 `
 
@@ -50,6 +73,9 @@ align-items: flex-start;
 text-align: left;
 width: 96%;
 margin: 0;
+
+
+
 `
 
 export const P = styled.p `
@@ -77,6 +103,11 @@ video{
     position: absolute;
     top: -57px;
     left: -28px;
+
+    @media only  screen and (max-width: 800px){
+        left: -51px;
+
+    }
 }
 `
 export const Right_section = styled.div `
@@ -86,12 +117,28 @@ margin-right: 33px;
 border-radius: 36px;
 background: #fff;
 overflow: hidden;
+
+@media only  screen and (max-width: 385px){
+    border-radius: unset;
+}
+
+@media only  screen and (max-width: 800px){
+    max-width: 372px;
+    width: 100%;
+    margin: 0 auto;
+    padding:unset;
+    }
 `
 export const Text_img = styled.div `
 padding-left: 20px;
 padding-top: 15px;
 position: relative;
 padding-bottom: 85px;
+
+@media only  screen and (max-width: 800px){
+padding-left: unset;
+padding-bottom: 30px;
+}
 `
 
 export const Text = styled.div `
@@ -100,6 +147,11 @@ flex-direction: column;
 justify-content: center;
 align-items: flex-start;
 width: 74%;
+
+@media only  screen and (max-width: 800px){
+width: 83%;
+margin: 0 auto;
+}
 `
 
 export const Img = styled.div `
@@ -110,4 +162,12 @@ transform: translateX(19px);
 background-position: center;
 margin-top: 64px;
 border-radius: 0 0 36px;
+
+@media only  screen and (max-width: 800px){
+width: 292px;
+height: 175px;
+background-size:cover;
+
+border-radius:unset;
+}
 `

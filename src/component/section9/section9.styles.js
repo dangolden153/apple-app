@@ -9,6 +9,10 @@ position: relative;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+
+    @media only  screen and (max-width: 800px){
+        flex-direction: column;
+        }
 `
 export const Left_section = styled.div `
 flex: 1;
@@ -17,6 +21,17 @@ margin-right: 31px;
 border-radius: 36px;
 background: #fff;
 padding: 15px 15px 84px 15px;
+
+@media only  screen and (max-width: 385px){
+    border-radius: unset;
+}
+
+@media only  screen and (max-width: 800px){
+    max-width: 372px;
+    width: 100%;
+    margin: 0 auto;
+    padding:unset;
+    }
 `
 
 
@@ -26,6 +41,12 @@ flex-direction: column;
 justify-content: center;
 align-items: flex-start;
 
+@media only  screen and (max-width: 800px){
+    width: 83%;
+    margin: 0 auto;
+    text-align: left;
+    }
+
 `
 
 export const Text = styled.div `
@@ -34,6 +55,12 @@ flex-direction: column;
 justify-content: center;
 align-items: flex-start;
 width: 63%;
+
+@media only  screen and (max-width: 800px){
+    width: 83%;
+    margin: 0 auto;
+    text-align: left;
+    }
 `
 export const Header = styled.h3 `
 font-size: 20px;
@@ -53,6 +80,9 @@ align-items: flex-start;
 text-align: left;
 width: 89%;
 margin: 0;
+
+@media only  screen and (max-width: 800px){
+    }
 `
 
 export const P = styled.p `
@@ -67,14 +97,26 @@ text-align: left;
 margin: 0;
 `
 
-export const Left_img = styled.div `
-height: 25rem;
-width: 21rem;
-background-size: cover;
-background-position: center;
-margin: 0 auto;
-margin-top: 35%;
+export const Img = styled.div `
+width: 1061px;
+height: 716px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 46px;
+    border-radius: 0 0 36px;
+
+    @media only  screen and (max-width: 800px){
+        width: 336px;
+        height: 232px;
+        transform: translateX(32px);
+        background-repeat: no-repeat;
+
+        }
 `
+
+
+
 export const Right_section = styled.div `
 width: 64%;
 margin: 10px;
@@ -82,19 +124,42 @@ margin-left: 33px;
 border-radius: 36px;
 background: #fff;
 overflow: hidden;
+
+@media only  screen and (max-width: 385px){
+    border-radius: unset;
+}
+
+@media only  screen and (max-width: 800px){
+    max-width: 372px;
+    width: 100%;
+    margin: 20px auto;
+    padding: unset;
+    }
+
 `
 export const Text_img = styled.div `
 padding-left: 20px;
 padding-top: 15px;
 position: relative;
+
+@media only  screen and (max-width: 800px){
+padding-left: unset;
+}
 `
-export const Img = styled.div `
-    transform: translateX(-33px);
-    width: 873px;
-    height: 591px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-top: 46px;
-    border-radius: 0 0 36px;
+
+
+export const Left_img = styled.div `
+height: 30rem;
+width: 30rem;
+background-size: cover;
+background-position: center;
+margin: 0 auto;
+margin-top: 35%;
+
+video{
+    @media only  screen and (max-width: 800px){
+        width: 271px;
+        }
+}
+
 `

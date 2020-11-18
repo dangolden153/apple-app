@@ -1,0 +1,48 @@
+.imgBOx{
+position: relative;
+top: 27%;
+opacity: 1;
+}
+
+.imgBOx.active{
+    opacity: 0;
+}
+
+.pics{
+    height: 663px;
+    width: 694px;
+    display: block;
+    z-index: 50;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 8px;
+    left: -46px;
+    opacity: 0;
+
+
+}
+
+
+.pics.picsActive{
+    transition: opacity 0.5s cubic-bezier(0.28, 0.11, 0.32, 1) 0s;
+    opacity: 1;
+}
+img{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+}
+@media screen and (max-width: 800px){
+    .pics{
+        height: 452px;
+        width: 475px;
+        left: -119px;
+        top: 50px; 
+    }
+    
+    }
